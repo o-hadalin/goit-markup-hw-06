@@ -657,8 +657,10 @@ button {
 }
 .footer-main {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 }
 .footer-main .container {
   font-size: 16px;
