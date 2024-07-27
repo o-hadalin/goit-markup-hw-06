@@ -178,7 +178,6 @@ button {
     margin-right: 76px;
   }
   .contacts-ul {
-    /* display: flex; */
     flex-direction: row;
     align-items: center;
     gap: 40px;
@@ -286,12 +285,20 @@ button {
   padding: 72px 52px;
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people_office_background.jpg);
+    url(../images/background-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 2dppx),
+  screen and (min-resolution: 2dpi) {
+  .order {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/background-mobile-2x.jpg);
+  }
 }
 .order .container {
   padding: 0;
@@ -299,11 +306,31 @@ button {
 @media screen and (min-width: 768px) {
   .order {
     padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/background-tablet-1x.jpg);
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 2dppx),
+  screen and (min-resolution: 192dpi) {
+  .order {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/background-tablet-2x.jpg);
   }
 }
 @media screen and (min-width: 1440px) {
   .order {
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/background-desktop-1x.jpg);
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 2dppx),
+  screen and (min-resolution: 192dpi) {
+  .order {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/background-desktop-2x.jpg);
   }
 }
 .order-titul {
@@ -314,7 +341,6 @@ button {
   text-align: center;
   color: #fff;
   max-width: 216px;
-  /* margin: 0 auto 48px; */
   margin: 0 auto 72px;
 }
 @media screen and (min-width: 768px) {
@@ -336,7 +362,6 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /* cursor: pointer; */
   color: #fff;
   padding: 16px 32px;
   border: none;
@@ -408,9 +433,6 @@ button {
     margin-bottom: 8px;
   }
 }
-/* .advantages-icon {
-  width: 64px;
-} */
 .titul-three {
   font-weight: 500;
   font-size: 20px;
@@ -643,7 +665,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  /* margin-left: 0; */
   display: flex;
   align-items: baseline;
 }
@@ -714,7 +735,6 @@ button {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* cursor: pointer; */
 }
 .subcribe {
   margin-left: 80px;
@@ -766,7 +786,6 @@ button {
   border-radius: 50% 50%;
   width: 24px;
   height: 24px;
-  /* cursor: pointer; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -889,9 +908,6 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  /* display: flex;
-  align-items: center;
-  gap: 8px; */
   margin-bottom: 24px;
 }
 .span-chekbox {
