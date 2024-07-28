@@ -55,7 +55,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1128px;
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -669,8 +669,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .footer-main {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
   }
 }
 .footer-main .container {
@@ -689,21 +688,21 @@ button {
     text-align: left;
   }
 }
+@media screen and (min-width: 1158px) {
+  .footer-main .container {
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-container {
-    width: 264px;
+    max-width: 264px;
   }
 }
 @media screen and (min-width: 1158px) {
   .footer-container {
     margin-right: 120px;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .footer-main .container {
-    flex-wrap: nowrap;
-    gap: 0;
-    align-items: baseline;
   }
 }
 .footer-container .paragraph {
@@ -742,6 +741,9 @@ button {
 .subcribe .paragraph {
   color: #ffffff;
   margin-bottom: 16px;
+}
+.subcribe {
+  max-width: 100%;
 }
 .logo-footer {
   margin-bottom: 16px;
@@ -784,11 +786,16 @@ button {
   width: 288px;
   display: inline-flex;
 }
+@media screen and (min-width: 1158px) {
+  .form-footer-email {
+    max-width: 264px;
+  }
+}
 .footer-btn {
   background-color: #4d5ae5;
   border-radius: 4px;
   padding: 0;
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   font-weight: 500;
   font-size: 16px;
