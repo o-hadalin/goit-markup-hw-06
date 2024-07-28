@@ -997,7 +997,7 @@ button {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
 }
-.modal-checkbox:checked + .span-chekbox {
+.modal-checkbox:checked + .label-chekbox .span-chekbox {
   background-color: #404bbf;
   border-radius: 2px;
   border: none;
@@ -1011,6 +1011,14 @@ button {
   border: none;
   fill: #f4f4fd;
   outline: none;
+}
+.span-chekbox:hover,
+.label-chekbox:hover .span-chekbox {
+  border: 1px solid #404bbf;
+}
+.modal-checkbox:checked + .span-chekbox,
+.modal-checkbox:checked + .span-chekbox:focus {
+  border: 1px solid #404bbf;
 }
 .privacy-policy {
   color: #4d5ae5;
