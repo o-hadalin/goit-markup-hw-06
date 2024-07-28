@@ -295,7 +295,7 @@ button {
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-resolution: 2dppx),
-  screen and (min-resolution: 2dpi) {
+  screen and (min-resolution: 192dpi) {
   .order {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/background-mobile-2x.jpg);
